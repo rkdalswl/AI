@@ -1,0 +1,226 @@
+fatalError: false
+maxTotalPoints: 16
+messages: []
+mode: auto
+parts:
+- description: ''
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 5
+  messages:
+  - File 'sentiment.pdf' does not exist
+  name: writeupValid
+  points: 0
+  seconds: 0
+- description: basic test
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 39, in test3a0\n    grader.requireIsEqual(ans, submission.extractWordFeatures(\"\
+    a b a\"))\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 26, in extractWordFeatures\n    raise\
+    \ Exception(\"Not implemented yet\")\n"
+  name: 3a-0-basic
+  points: 0
+  seconds: 0
+- description: test multiple instances of the same word in a sentence
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 46, in test3a1\n    submission_ans = submission.extractWordFeatures(sentence)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 26, in extractWordFeatures\n    raise\
+    \ Exception(\"Not implemented yet\")\n"
+  name: 3a-1-hidden
+  points: 0
+  seconds: 0
+- description: basic sanity check for learning correct weights on two training and
+    testing examples each
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 55, in test3b0\n    weights = submission.learnPredictor(trainExamples,\
+    \ testExamples, featureExtractor, numIters=20, eta=0.01)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 47, in learnPredictor\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 3b-0-basic
+  points: 0
+  seconds: 0
+- description: test correct overriding of positive weight due to one negative instance
+    with repeated words
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 64, in test3b1\n    weights = submission.learnPredictor(trainExamples,\
+    \ testExamples, featureExtractor, numIters=20, eta=0.01)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 47, in learnPredictor\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 3b-1-basic
+  points: 0
+  seconds: 0
+- description: test classifier on real polarity dev dataset
+  extraCredit: false
+  maxPoints: 2
+  maxSeconds: 8
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 73, in test3b2\n    weights = submission.learnPredictor(trainExamples,\
+    \ devExamples, featureExtractor, numIters=20, eta=0.01)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 47, in learnPredictor\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 3b-2-basic
+  points: 0
+  seconds: 0
+- description: test correct generation of random dataset labels
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 87, in test3c0\n    data = submission.generateDataset(5,\
+    \ weights)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 69, in generateDataset\n    return\
+    \ [generateExample() for _ in range(numExamples)]\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 69, in <listcomp>\n    return [generateExample()\
+    \ for _ in range(numExamples)]\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 66, in generateExample\n    raise\
+    \ Exception(\"Not implemented yet\")\n"
+  name: 3c-0-basic
+  points: 0
+  seconds: 0
+- description: test that the randomly generated example actually coincides with the
+    given weights
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 96, in test3c1\n    data = submission.generateDataset(100,\
+    \ weights)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 69, in generateDataset\n    return\
+    \ [generateExample() for _ in range(numExamples)]\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 69, in <listcomp>\n    return [generateExample()\
+    \ for _ in range(numExamples)]\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 66, in generateExample\n    raise\
+    \ Exception(\"Not implemented yet\")\n"
+  name: 3c-1-basic
+  points: 0
+  seconds: 0
+- description: test basic character n-gram features
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 111, in test3e0\n    grader.requireIsEqual(ans, fe(sentence))\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 83, in extract\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 3e-0-basic
+  points: 0
+  seconds: 0
+- description: test feature extraction on repeated character n-grams
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 119, in test3e1\n    submission_ans = submission.extractCharacterFeatures(n)(sentence)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 83, in extract\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 3e-1-hidden
+  points: 0
+  seconds: 0
+- description: test basic k-means on hardcoded datapoints
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 1
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 141, in test4b0\n    centers, assignments, totalCost\
+    \ = submission.kmeans(examples, 2, maxIters=10)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 102, in kmeans\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 4b-0-basic
+  points: 0
+  seconds: 0
+- description: test stability of cluster assignments
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 3
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 152, in test4b1\n    centers, assignments, totalCost\
+    \ = submission.kmeans(examples, K, maxIters=100)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 102, in kmeans\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 4b-1-hidden
+  points: 0
+  seconds: 0
+- description: test stability of cluster locations
+  extraCredit: false
+  maxPoints: 1
+  maxSeconds: 3
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 161, in test4b2\n    centers, assignments, totalCost\
+    \ = submission.kmeans(examples, K, maxIters=100)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 102, in kmeans\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 4b-2-hidden
+  points: 0
+  seconds: 0
+- description: make sure the code runs fast enough
+  extraCredit: false
+  maxPoints: 2
+  maxSeconds: 4
+  messages:
+  - 'Exception thrown: <class ''Exception''> -- Not implemented yet'
+  - "  File \"grader.py\", line 170, in test4b3\n    centers, assignments, totalCost\
+    \ = submission.kmeans(examples, K, maxIters=100)\n"
+  - "  File \"C:\\Users\\sh0416\\Google \uB4DC\uB77C\uC774\uBE0C\\\uB300\uD559\uC6D0\
+    \\\uC870\uAD50\\2020-2. [CSED442] \uC778\uACF5\uC9C0\uB2A5 \uC870\uAD50\\assn4\
+    \ (1)\\02_deployment\\submission.py\", line 102, in kmeans\n    raise Exception(\"\
+    Not implemented yet\")\n"
+  name: 4b-3-basic
+  points: 0
+  seconds: 0
+totalPoints: 0
